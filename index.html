@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEM Rebuilds - Genuine Automotive Parts</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <a href="index.html" class="logo">OEM Rebuilds</a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="#" class="nav-link">Categories</a>
+        </nav>
+
+        <!-- Right Side Icons -->
+        <div class="header-icons">
+          <button class="icon-button" id="search-button">
+            <i data-feather="search"></i>
+          </button>
+
+          <button class="icon-button" id="cart-button">
+            <i data-feather="shopping-cart"></i>
+          </button>
+
+          <button class="icon-button" id="user-button">
+            <i data-feather="user"></i>
+            <div class="user-dropdown" id="user-dropdown">
+              <div class="user-info" id="user-info">
+                Hello, Guest
+              </div>
+              <hr>
+              <button id="login-button" class="dropdown-button">Login</button>
+              <button id="logout-button" class="dropdown-button" style="display: none;">Logout</button>
+            </div>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button class="icon-button mobile-menu-button" id="mobile-menu-button">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="container">
+      <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="products.html" class="mobile-nav-link">Products</a>
+        <a href="#" class="mobile-nav-link">Categories</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Original Parts. <br> Perfect Rebuilds.</h1>
+          <p class="hero-subtitle">Find genuine OEM parts for your vehicle, delivered to your doorstep.</p>
+
+          <!-- Vehicle Selector -->
+          <div class="vehicle-selector">
+            <h2 class="selector-title">Find Parts for Your Vehicle</h2>
+
+            <div class="selector-grid">
+              <!-- Car Make Dropdown -->
+              <div class="selector-group">
+                <label class="selector-label">Car Make</label>
+                <div class="selector-dropdown">
+                  <select id="car-make" class="selector-select">
+                    <option value="">Select Make</option>
+                  </select>
+                  <div class="dropdown-icon">
+                    <i data-feather="chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Car Model Dropdown -->
+              <div class="selector-group">
+                <label class="selector-label">Car Model</label>
+                <div class="selector-dropdown">
+                  <select id="car-model" class="selector-select" disabled>
+                    <option value="">Select Model</option>
+                  </select>
+                  <div class="dropdown-icon">
+                    <i data-feather="chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Condition Dropdown -->
+              <div class="selector-group">
+                <label class="selector-label">Condition</label>
+                <div class="selector-dropdown">
+                  <select id="car-condition" class="selector-select">
+                    <option value="">Select Condition</option>
+                    <option value="Running">Running</option>
+                    <option value="Stopped">Stopped</option>
+                  </select>
+                  <div class="dropdown-icon">
+                    <i data-feather="chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button id="find-parts-button" class="primary-button" disabled>Find Parts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid" id="category-grid">
+          <!-- Categories will be added dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="section-title">Featured Parts</h2>
+        <div class="product-grid" id="featured-products">
+          <!-- Products will be added dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-title">OEM Rebuilds</h3>
+            <p class="footer-text">Your trusted source for genuine OEM automotive parts and accessories.</p>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">Shop</h4>
+            <ul class="footer-links">
+              <li><a href="products.html" class="footer-link">All Products</a></li>
+              <li><a href="#" class="footer-link">Engine Parts</a></li>
+              <li><a href="#" class="footer-link">Body Parts</a></li>
+              <li><a href="#" class="footer-link">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Contact Us</a></li>
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping Info</a></li>
+              <li><a href="#" class="footer-link">Returns & Refunds</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Facebook</a></li>
+              <li><a href="#" class="footer-link">Instagram</a></li>
+              <li><a href="#" class="footer-link">Twitter</a></li>
+              <li><a href="#" class="footer-link">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> OEM Rebuilds. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2 class="cart-title">Your Cart</h2>
+      <button class="close-button" id="close-cart">
+        <i data-feather="x"></i>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be added dynamically via JavaScript -->
+      <div class="empty-cart" id="empty-cart">
+        <i data-feather="shopping-bag" class="empty-cart-icon"></i>
+        <p class="empty-cart-text">Your cart is empty</p>
+        <button class="text-button" id="continue-shopping">Continue Shopping</button>
+      </div>
+    </div>
+
+    <div class="cart-footer" id="cart-footer" style="display: none;">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button class="primary-button" id="checkout-button">Checkout</button>
+      <button class="text-button" id="clear-cart">Clear Cart</button>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="login-modal-overlay"></div>
+  <div class="modal" id="login-modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="auth-modal-title">Login</h2>
+      <button class="close-button" id="close-login-modal">
+        <i data-feather="x"></i>
+      </button>
+    </div>
+
+    <form class="modal-form" id="auth-form">
+      <div id="auth-error" class="error-message" style="display: none;"></div>
+
+      <div class="form-group" id="name-group" style="display: none;">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" class="form-input" placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" id="email" class="form-input" placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-input" placeholder="••••••••">
+      </div>
+
+      <button type="submit" class="primary-button" id="auth-submit-button">Login</button>
+
+      <div class="form-footer">
+        <button type="button" class="text-button" id="toggle-auth-mode">
+          Don't have an account? Register
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
